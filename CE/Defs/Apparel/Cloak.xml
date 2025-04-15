@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_Cloak_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>cloak</label>
+		<description>.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets />
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+				<li>Medieval</li>
+				<li>MedievalMilitary</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Cloak_Base">
+		<defName>TA_CloakClosed</defName>
+		<graphicData>
+			<texPath>Apparel/TA_Cloak/TA_CloakClosed_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/TA_Cloak/TA_CloakClosed</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CloakSemi</SwitchTo>
+				<graphicPath>Apparel/TA_Cloak/TA_CloakSemi_ico</graphicPath>
+				<Label>open up</Label>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Cloak_Base">
+		<defName>TA_CloakSemi</defName>
+		<graphicData>
+			<texPath>Apparel/TA_Cloak/TA_CloakSemi_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/TA_Cloak/TA_CloakSemi</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CloakOpen</SwitchTo>
+				<graphicPath>Apparel/TA_Cloak/TA_CloakOpen_ico</graphicPath>
+				<Label>open up</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Cloak_Base">
+		<defName>TA_CloakOpen</defName>
+		<graphicData>
+			<texPath>Apparel/TA_Cloak/TA_CloakOpen_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/TA_Cloak/TA_CloakOpen_front</wornGraphicPath>
+			<renderNodeProperties>
+				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
+					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
+					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
+					<backGraphicPath>Apparel/TA_Cloak/TA_CloakOpen_front</backGraphicPath>
+					<visibleFacing>
+						<li>South</li>
+						<li>North</li>
+						<li>East</li>
+						<li>West</li>
+					</visibleFacing>
+					<baseLayer>25</baseLayer>
+				</li>
+				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
+					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
+					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
+					<backGraphicPath>Apparel/TA_Cloak/TA_CloakOpen_back</backGraphicPath>
+					<visibleFacing>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>-1</baseLayer>
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CloakClosed</SwitchTo>
+				<graphicPath>Apparel/TA_Cloak/TA_CloakClosed_ico</graphicPath>
+				<Label>close</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

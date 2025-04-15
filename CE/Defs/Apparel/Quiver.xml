@@ -3,7 +3,7 @@
 
 	<!--Quiver-->
 	<ThingDef ParentName="TA_ApparelCarryGear_Base">
-		<defName>TA_BowAndArrowQuiver</defName>
+		<defName>TA_QuiverBowAndArrow</defName>
 		<label>bow and arrow quiver belt</label>
 		<description>.</description>
 		<graphicData>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_Capelet_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>capelet</label>
+		<description>.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets />
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnHead</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+				<li>Medieval</li>
+				<li>MedievalMilitary</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Capelet_Base">
+		<defName>TA_CapeletUp</defName>
+		<graphicData>
+			<texPath>Apparel/TA_Capelet/TA_CapeletUp_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletUp</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CapeletDown</SwitchTo>
+				<graphicPath>Apparel/TA_Capelet/TA_CapeletDown_ico</graphicPath>
+				<Label>hood down</Label>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Capelet_Base">
+		<defName>TA_CapeletDown</defName>
+		<graphicData>
+			<texPath>Apparel/TA_Capelet/TA_CapeletDown_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletDown</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CapeletUp</SwitchTo>
+				<graphicPath>Apparel/TA_Capelet/TA_CapeletUp_ico</graphicPath>
+				<Label>hood up</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

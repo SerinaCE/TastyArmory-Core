@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>TA_PeasantTunic</defName>
-		<label>peasant tunic</label>
+		<label>tunic</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/TA_PeasantShirt/TA_PeasantShirt_ico</texPath>

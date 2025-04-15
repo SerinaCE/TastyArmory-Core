@@ -46,6 +46,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/TA_MailleShirt/TA_MailleShirt</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>TA_UnderArmor</li>
 			</layers>

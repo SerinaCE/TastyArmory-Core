@@ -37,8 +37,16 @@ drawheight:
 		<label>TA_BootGlove</label>
 		<drawOrder>110</drawOrder>
 	</ApparelLayerDef>
+	
+	<ApparelLayerDef>
+		<defName>TC_Webbing</defName>
+		<label>webbing</label>
+		<drawOrder>210</drawOrder>
+	</ApparelLayerDef>
 
 </Defs>
+
+
 
 
 <!--
