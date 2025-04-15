@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tasty Armory - Core</name>
+	<author>al9000</author>
+	<supportedVersions>
+	  <li>1.5</li>
+	</supportedVersions>
+		<packageId>al9000.tastycore</packageId>
+	<description>stuff</description>
+	<loadAfter>
+		<li>DankPyon.Medieval.Overhaul</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+</ModMetaData>
