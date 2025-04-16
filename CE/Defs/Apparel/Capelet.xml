@@ -8,15 +8,16 @@
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>85</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<equippedStatOffsets />
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>8000</WorkToMake>
-			<Mass>2</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
 			<EquipDelay>1</EquipDelay>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
@@ -56,10 +57,27 @@
 		<defName>TA_CapeletUp</defName>
 		<graphicData>
 			<texPath>Apparel/TA_Capelet/TA_CapeletUp_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletUp</wornGraphicPath>
+			<renderNodeProperties>
+				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
+					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
+					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
+					<backGraphicPath>Apparel/TA_Capelet/TA_CapeletUp</backGraphicPath>
+					<visibleFacing>
+						<li>South</li>
+						<li>North</li>
+						<li>East</li>
+						<li>West</li>
+					</visibleFacing>
+					<baseLayer>68</baseLayer>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
@@ -74,11 +92,25 @@
 		<defName>TA_CapeletDown</defName>
 		<graphicData>
 			<texPath>Apparel/TA_Capelet/TA_CapeletDown_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<recipeMaker Inherit="False" />
 		<apparel>
 			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletDown</wornGraphicPath>
+			<renderNodeProperties>
+				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
+					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
+					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
+					<backGraphicPath>Apparel/TA_Capelet/TA_CapeletDown</backGraphicPath>
+					<visibleFacing>
+						<li>South</li>
+						<li>North</li>
+						<li>East</li>
+						<li>West</li>
+					</visibleFacing>
+					<baseLayer>68</baseLayer>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
