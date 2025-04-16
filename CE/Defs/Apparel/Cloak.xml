@@ -11,6 +11,7 @@
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<equippedStatOffsets />
 		<statBases>
@@ -156,6 +157,31 @@
 				<Label>close</Label>
 			</li>
 		</comps>
+	</ThingDef>
+
+		
+	<ThingDef ParentName="TA_Cloak_Base">
+		<defName>TC_KidCloak</defName>
+		<label>kid's cloak</label>
+		<description>A cloak</description>
+		<graphicData>
+			<texPath>Apparel/TA_KidCloak/TA_KidCloak</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/TA_KidCloak/TA_KidCloak</wornGraphicPath>
+			<developmentalStageFilter>Child</developmentalStageFilter>
+			<tags>
+				<li>Neolithic</li>
+				<li>Medieval</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+		</apparel>
 	</ThingDef>
 
 </Defs>
