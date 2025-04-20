@@ -28,8 +28,8 @@
 			<WorkToMake>20000</WorkToMake>
 			<Bulk>10</Bulk>
 			<WornBulk>3</WornBulk>
-			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>1.70</StuffEffectMultiplierArmor>
+			<Mass>9</Mass>
+			<StuffEffectMultiplierArmor>1.75</StuffEffectMultiplierArmor>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<thingCategories>

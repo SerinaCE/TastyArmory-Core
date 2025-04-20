@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--Quiver-->
-	<ThingDef ParentName="TA_ApparelCarryGear_Base">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TA_QuiverBowAndArrow</defName>
 		<label>bow and arrow quiver belt</label>
 		<description>.</description>
@@ -39,7 +39,6 @@
 					<layer>28</layer>
 				</defaultData>
 			</drawData>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<wornGraphicPath>Apparel/TA_TurkQuiver/TA_TurkQuiver</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

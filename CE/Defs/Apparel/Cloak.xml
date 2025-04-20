@@ -32,6 +32,7 @@
 					<layer>25</layer>
 				</defaultData>
 			</drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>

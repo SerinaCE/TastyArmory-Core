@@ -3,7 +3,7 @@
 
 	<!-- ==================== Sack ==================== -->
 
-	<ThingDef ParentName="TA_ApparelCarryGear_Base">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TA_SnapSack</defName>
 		<label>snapsack</label>
 		<description>.</description>
@@ -37,7 +37,6 @@
 				</defaultData>
 			</drawData>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfDamaged>false</careIfDamaged>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>

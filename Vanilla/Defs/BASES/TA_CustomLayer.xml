@@ -39,7 +39,7 @@ drawheight:
 	</ApparelLayerDef>
 	
 	<ApparelLayerDef>
-		<defName>TC_Webbing</defName>
+		<defName>TA_Webbing</defName>
 		<label>webbing</label>
 		<drawOrder>210</drawOrder>
 	</ApparelLayerDef>
