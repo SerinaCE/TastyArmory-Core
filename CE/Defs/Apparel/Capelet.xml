@@ -60,9 +60,6 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<apparel>
-			<renderSkipFlags Inherit="False">
-				<li>None</li>
-			</renderSkipFlags>
 			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletUp</wornGraphicPath>
 			<renderNodeProperties>
 				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
@@ -96,6 +93,9 @@
 		</graphicData>
 		<recipeMaker Inherit="False" />
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>None</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletDown</wornGraphicPath>
 			<renderNodeProperties>
 				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
