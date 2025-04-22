@@ -61,7 +61,7 @@
 		</graphicData>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/TA_Capelet/TA_CapeletUp</wornGraphicPath>
 			<renderNodeProperties>
