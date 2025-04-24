@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TA_PeasantTunic</defName>
-		<label>tunic</label>
-		<description>.</description>
+		<defName>TA_KidHood</defName>
+		<label>child's hood</label>
+		<description>A hood</description>
 		<graphicData>
-			<texPath>Apparel/TA_PeasantShirt/TA_PeasantShirt_ico</texPath>
+			<texPath>Apparel/TA_KidHood/TA_KidHood_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<possessionCount>1</possessionCount>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
+		<smeltable>false</smeltable>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>2500</WorkToMake>
-			<Mass>0.75</Mass>
-			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<thingCategories>
-			<li>ApparelMisc</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
-			<shellRenderedBehindHead>true</shellRenderedBehindHead>
-			<developmentalStageFilter>Adult</developmentalStageFilter>
+      <parentTagDef>ApparelHead</parentTagDef>
+			<developmentalStageFilter>Child</developmentalStageFilter>
 			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
+				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/TA_PeasantShirt/TA_PeasantShirt</wornGraphicPath>
+			<wornGraphicPath>Apparel/TA_KidHood/TA_KidHood</wornGraphicPath>
 			<layers>
-				<li>OnSkin</li>
+				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>Neolithic</li>

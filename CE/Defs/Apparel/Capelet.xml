@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef Name="TA_Capelet_Base" ParentName="ApparelMakeableBase" Abstract="True">
+	<!--ThingDef Name="TA_Capelet_Base" ParentName="ApparelMakeableBase" Abstract="True">
 		<label>capelet</label>
 		<description>.</description>
 		<recipeMaker>
@@ -119,6 +119,6 @@
 				<Label>hood up</Label>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef-->
 
 </Defs>
