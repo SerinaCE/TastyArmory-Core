@@ -13,7 +13,7 @@
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>

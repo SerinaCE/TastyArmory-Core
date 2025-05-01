@@ -14,22 +14,22 @@
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>2</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
-		<costStuffCount>85</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<equippedStatOffsets />
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
 			<Bulk>10</Bulk>
 			<WornBulk>3</WornBulk>
-			<Mass>9</Mass>
-			<StuffEffectMultiplierArmor>1.75</StuffEffectMultiplierArmor>
+			<Mass>8</Mass>
+			<StuffEffectMultiplierArmor>1.7</StuffEffectMultiplierArmor>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<thingCategories>

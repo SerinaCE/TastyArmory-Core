@@ -37,6 +37,12 @@ drawheight:
 		<label>TA_BootGlove</label>
 		<drawOrder>110</drawOrder>
 	</ApparelLayerDef>
+	
+	<ApparelLayerDef>
+		<defName>TA_Drip</defName>
+		<label>overarmor_cosmetic</label>
+		<drawOrder>205</drawOrder>
+	</ApparelLayerDef>
 
 </Defs>
 

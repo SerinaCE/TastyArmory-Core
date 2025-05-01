@@ -39,10 +39,17 @@ drawheight:
 	</ApparelLayerDef>
 	
 	<ApparelLayerDef>
+		<defName>TA_Drip</defName>
+		<label>overarmor_cosmetic</label>
+		<drawOrder>205</drawOrder>
+	</ApparelLayerDef>
+	
+	<ApparelLayerDef>
 		<defName>TA_Webbing</defName>
 		<label>webbing</label>
 		<drawOrder>210</drawOrder>
 	</ApparelLayerDef>
+
 
 </Defs>
 
