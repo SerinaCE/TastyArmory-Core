@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase" Name="TA_Tunic_base">
 		<defName>TA_PeasantTunic</defName>
 		<label>tunic</label>
 		<description>.</description>
@@ -24,7 +24,7 @@
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.75</Mass>
 			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -40,13 +40,15 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/TA_Tunic/TA_Tunic_ico</wornGraphicPath>
+			<wornGraphicPath>Apparel/TA_Tunic/TA_Tunic</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<tags>
+			<tags>				
 				<li>Neolithic</li>
 				<li>Medieval</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -57,5 +59,27 @@
 		<tradeTags>
 			<li>BasicClothing</li>
 		</tradeTags>
+	</ThingDef>	
+		
+	<ThingDef ParentName="TA_Tunic_base">
+		<defName>TC_KidDress</defName>
+		<label>kid's dress</label>
+		<description>A dress</description>
+		<graphicData>
+			<texPath>Apparel/TA_KidDress/TA_KidDress</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>37</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/TA_KidDress/TA_KidDress</wornGraphicPath>
+			<developmentalStageFilter>Child</developmentalStageFilter>
+			<tags>
+				<li>Worker</li>
+			</tags>
+		</apparel>
 	</ThingDef>
+
 </Defs>
