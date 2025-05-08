@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<ThingStyleDef MayRequire="al9000.medievaleuropepartone">
+		<defName>TA_PeasantTunic_Long</defName>
+		<wornGraphicPath>Apparel/Clothes/TA_TunicLong/TA_TunicLong</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_TunicLong/TA_TunicLong_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 
 	<ThingDef ParentName="ApparelMakeableBase" Name="TA_Tunic_base">
 		<defName>TA_PeasantTunic</defName>
@@ -12,7 +21,7 @@
 		<randomStyleChance>0.5</randomStyleChance>
 		<randomStyle>
 			<li MayRequire="al9000.medievaleuropepartone">
-				<styleDef>TA_Style_PeasantTunic_Long</styleDef>
+				<styleDef>TA_PeasantTunic_Long</styleDef>
 			</li>
 		</randomStyle>
 		<recipeMaker>

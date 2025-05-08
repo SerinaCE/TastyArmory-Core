@@ -3,11 +3,11 @@
 
 	<!--Quiver-->
 	<ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
-		<defName>TA_QuiverBowAndArrow</defName>
-		<label>bow and arrow quiver belt</label>
+		<defName>TA_Quiver</defName>
+		<label>quiver belt</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_TurkQuiver/TA_TurkQuiver_ico</texPath>
+			<texPath>Apparel/Accessories/TA_QuiverBelt/TA_QuiverBelt_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -17,6 +17,11 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>

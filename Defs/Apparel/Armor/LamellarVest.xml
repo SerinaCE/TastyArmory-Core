@@ -27,7 +27,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
-			<Mass>5.5</Mass>
+			<Mass>6</Mass>
 			<StuffEffectMultiplierArmor>1.8</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
@@ -120,7 +120,7 @@
 		<statBases>
 			<MaxHitPoints>170</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
-			<Bulk>15</Bulk>
+			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3.0</WornBulk>
 			<Mass>3.5</Mass>
 			<StuffEffectMultiplierArmor>7</StuffEffectMultiplierArmor>

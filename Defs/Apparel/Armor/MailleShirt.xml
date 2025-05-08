@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	
+	<ThingStyleDef MayRequire="al9000.medievaleuropepartone">
+		<defName>TA_MailleShirt_Bulky</defName>
+		<wornGraphicPath>Apparel/Armor/TA_CoatOfMaille/TA_CoatOfMaille</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_CoatOfMaille/TA_CoatOfMaille_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
-	<!-- ==================== Hauberk ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase" MayRequireAnyOf="al9000.tastysteppe, al9000.fireandsteel, al9000.medievaleuropepartone">
 		<defName>TA_MailleShirt</defName>
 		<label>maille shirt</label>
@@ -13,7 +21,7 @@
 		<randomStyleChance>0.4</randomStyleChance>
 		<randomStyle>
 			<li MayRequire="al9000.medievaleuropepartone">
-				<styleDef>TA_Style_MailleShirt_Bulky</styleDef>
+				<styleDef>TA_MailleShirt_Bulky</styleDef>
 			</li>
 		</randomStyle>
 		<recipeMaker>
@@ -31,7 +39,7 @@
 		<equippedStatOffsets />
 		<statBases>
 			<MaxHitPoints>600</MaxHitPoints>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>27000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
 			<Mass>9</Mass>
@@ -42,6 +50,7 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
