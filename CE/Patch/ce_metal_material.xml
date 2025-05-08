@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Core ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_MailleShirt" or
+            feName="TA_LamellarVestMetal"]/stuffCategories</xpath>
+		<value>
+            <stuffCategories>
+                <li>Steeled</li>
+            </stuffCategories>
+		</value>
+	</Operation>
+
+</Patch>

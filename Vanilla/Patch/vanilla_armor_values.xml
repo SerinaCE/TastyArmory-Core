@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== TA_MailleShirt ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_MailleShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ========== TA_LamellarVestMetal ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestMetal"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ========== TA_LamellarVestLeather ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestLeather"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestLeather"]/statBases/ArmorRating_Sharp</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestLeather"]/statBases/ArmorRating_Blunt</xpath>
+	</Operation>
+	
+
+</Patch>
