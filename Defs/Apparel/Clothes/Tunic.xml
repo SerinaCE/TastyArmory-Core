@@ -77,7 +77,7 @@
 	</ThingDef>	
 		
 	<ThingDef ParentName="TA_Tunic_base">
-		<defName>TC_KidDress</defName>
+		<defName>TA_KidDress</defName>
 		<label>kid's dress</label>
 		<description>A dress</description>
 		<graphicData>

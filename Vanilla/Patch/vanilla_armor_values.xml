@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+    <!--Clothes-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_PeasantTunic" or
+                  defName="TA_KidDress" or
+                  defName="TA_KidCloak" or
+                  defName="TA_CloakOpen" or
+                  defName="TA_CloakSemi" or
+                  defName="TA_CloakClosed"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	
+
+    <!--TA_GambesonCoat-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+                  defName="TA_GambesonCoat"
+			]/statBases/ArmorRating_Sharp
+            </xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+                  defName="TA_GambesonCoat"
+			]/statBases/ArmorRating_Blunt
+            </xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_GambesonCoat"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
 	<!-- ========== TA_MailleShirt ========== -->
 
 	<Operation Class="PatchOperationReplace">

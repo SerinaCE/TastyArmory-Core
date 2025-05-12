@@ -164,7 +164,7 @@
 
 		
 	<ThingDef ParentName="TA_Cloak_Base">
-		<defName>TC_KidCloak</defName>
+		<defName>TA_KidCloak</defName>
 		<label>kid's cloak</label>
 		<description>A cloak</description>
 		<graphicData>
