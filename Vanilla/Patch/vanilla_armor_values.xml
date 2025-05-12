@@ -16,7 +16,7 @@
 		<xpath>Defs/ThingDef[
             defName="TA_LamellarVestMetal"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 

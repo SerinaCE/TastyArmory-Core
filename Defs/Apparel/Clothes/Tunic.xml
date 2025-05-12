@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingStyleDef MayRequire="al9000.medievaleuropepartone">
+	<ThingStyleDef MayRequire="al9000.highmedieval">
 		<defName>TA_PeasantTunic_Long</defName>
 		<wornGraphicPath>Apparel/Clothes/TA_TunicLong/TA_TunicLong</wornGraphicPath>
 		<graphicData>
@@ -20,7 +20,7 @@
 		</graphicData>
 		<randomStyleChance>0.5</randomStyleChance>
 		<randomStyle>
-			<li MayRequire="al9000.medievaleuropepartone">
+			<li MayRequire="al9000.highmedieval">
 				<styleDef>TA_PeasantTunic_Long</styleDef>
 			</li>
 		</randomStyle>

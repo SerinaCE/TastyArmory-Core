@@ -1,4 +1,4 @@
 # TastyArmory-Core
  
 Todo:
-xml for clak, capelet, scarf
+xml for capelet, scarf

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	
-	<ThingStyleDef MayRequire="al9000.medievaleuropepartone">
+	<ThingStyleDef MayRequire="al9000.highmedieval">
 		<defName>TA_MailleShirt_Bulky</defName>
 		<wornGraphicPath>Apparel/Armor/TA_CoatOfMaille/TA_CoatOfMaille</wornGraphicPath>
 		<graphicData>
@@ -10,7 +10,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<ThingDef ParentName="ArmorSmithableBase" MayRequireAnyOf="al9000.tastysteppe, al9000.fireandsteel, al9000.medievaleuropepartone">
+	<ThingDef ParentName="ArmorSmithableBase" MayRequireAnyOf="al9000.tastysteppe,al9000.fireandsteel,al9000.highmedieval">
 		<defName>TA_MailleShirt</defName>
 		<label>maille shirt</label>
 		<description>long shirt of riveted maille, decent protection, very durable, lot of work to make.</description>
@@ -20,7 +20,7 @@
 		</graphicData>
 		<randomStyleChance>0.4</randomStyleChance>
 		<randomStyle>
-			<li MayRequire="al9000.medievaleuropepartone">
+			<li MayRequire="al9000.highmedieval">
 				<styleDef>TA_MailleShirt_Bulky</styleDef>
 			</li>
 		</randomStyle>
@@ -80,7 +80,7 @@
 			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
 				<stats>
 					<li>
-						<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+						<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 						<parts>
 							<li>Torso</li>
 							<li>Shoulder</li>
@@ -88,20 +88,12 @@
 							<li>Leg</li>
 						</parts>
 					</li>
-				</stats>
-			</li>
-			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
-				<stats>
 					<li>
 						<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 						<parts>
 							<li>Neck</li>
 						</parts>
 					</li>
-				</stats>
-			</li>
-			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
-				<stats>
 					<li>
 						<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 						<parts>

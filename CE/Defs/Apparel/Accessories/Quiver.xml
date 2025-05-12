@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<ThingStyleDef MayRequire="al9000.tastysteppe, al9000.fireandsteel">
+		<defName>TA_QuiverTurk</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_QuiverTurk/TA_QuiverTurk</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_QuiverTurk/TA_QuiverTurk_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef  MayRequire="al9000.tastysteppe">
+		<defName>TA_QuiverHungarian</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_QuiverHungarian/TA_QuiverHungarian</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_QuiverHungarian/TA_QuiverHungarian_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_QuiverSling</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_QuiverSling/Quiver</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_QuiverSling/Quiver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 
 	<!--Quiver-->
 	<ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
@@ -11,6 +38,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<randomStyleChance>0.65</randomStyleChance>
+		<randomStyle>
+			<li MayRequire="al9000.tastysteppe, al9000.fireandsteel">
+				<chance>1</chance>
+				<styleDef>TA_QuiverTurk</styleDef>
+			</li>
+			<li MayRequire="al9000.tastysteppe">
+				<chance>1</chance>
+				<styleDef>TA_QuiverHungarian</styleDef>
+			</li>
+			<li>
+				<chance>0.1</chance>
+				<styleDef>TA_QuiverSling</styleDef>
+			</li>
+		</randomStyle>
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>RecurveBow</researchPrerequisite>
@@ -45,7 +87,7 @@
 				</defaultData>
 			</drawData>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<wornGraphicPath>Apparel/Accessories/TA_TurkQuiver/TA_TurkQuiver</wornGraphicPath>
+			<wornGraphicPath>Apparel/Accessories/TA_QuiverBelt/TA_QuiverBelt</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>Torso</li>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="ArmorSmithableBase" Name="TA_LamellarVest" MayRequireAnyOf="al9000.tastysteppe, al9000.medievaleuropepartone">
+	<ThingDef ParentName="ArmorSmithableBase" Name="TA_LamellarVest" MayRequireAnyOf="al9000.tastysteppe,al9000.highmedieval">
 		<defName>TA_LamellarVestMetal</defName>
 		<label>lamellar vest</label>
 		<description>.</description>
@@ -18,13 +18,13 @@
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>65</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
 			<Mass>6</Mass>

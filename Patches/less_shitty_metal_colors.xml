@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/color</xpath>
+					<value>
+						<color>(141,142,143)</color>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/color</xpath>
+					<value>
+						<color>(160,178,181)</color>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Uranium"]/stuffProps/color</xpath>
+					<value>
+						<color>(95,100,100)</color>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Silver"]/stuffProps/color</xpath>
+					<value>
+						<color>(210,210,203)</color>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Gold"]/stuffProps/color</xpath>
+					<value>
+						<color>(255,210,0)</color>
+					</value>
+				</li>
+				
+			</operations>
+	</Operation>
+</Patch>
