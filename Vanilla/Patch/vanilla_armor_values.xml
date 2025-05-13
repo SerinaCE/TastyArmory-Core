@@ -15,22 +15,9 @@
 			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
-
 	
 
     <!--TA_GambesonCoat-->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[
-                  defName="TA_GambesonCoat"
-			]/statBases/ArmorRating_Sharp
-            </xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[
-                  defName="TA_GambesonCoat"
-			]/statBases/ArmorRating_Blunt
-            </xpath>
-	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
                   defName="TA_GambesonCoat"
