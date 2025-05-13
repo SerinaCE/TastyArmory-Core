@@ -6,7 +6,6 @@
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_TunicLong/TA_TunicLong_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 
