@@ -58,6 +58,25 @@
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
+	<!-- SiegeArquebus -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TA_SiegeArquebus</defName>
+		<label>.75 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_MusketBall>Bullet_75CalBall370mps</Ammo_MusketBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- Handgonne -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TA_Handgonne</defName>
+		<label>.75 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_MusketBall>Bullet_SlowMusketBall</Ammo_MusketBall>
+			<Ammo_BlunderbussShot>Bullet_TA_SlowMusketBuck</Ammo_BlunderbussShot>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
@@ -289,6 +308,23 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<ThingDef ParentName="MusketBallBullet">
+		<defName>Bullet_TA_SlowMusketBuck</defName>
+		<label>buckshot pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>46</speed>
+			<damageAmountBase>5</damageAmountBase>
+			<pelletCount>12</pelletCount>
+			<armorPenetrationSharp>2.0</armorPenetrationSharp>
+			<armorPenetrationBlunt>1.48</armorPenetrationBlunt>
+			<spreadMult>17.8</spreadMult>
+		</projectile>
+	</ThingDef>	
 
 	<!-- ==================== Recipes ========================== -->
 
