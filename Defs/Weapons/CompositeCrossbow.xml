@@ -9,7 +9,7 @@
 		<graphicData>
       <texPath>Weapons/Ranged/TA_CompositeCrossbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
     <soundInteract>Bow_Large</soundInteract>
     <costList>
@@ -30,6 +30,7 @@
         <li>NeolithicRangedChief</li>
         <li>MedievalRangedDecent</li>
         <li>MedievalRangedAdvanced</li>
+			<li>CE_OneHandedWeapon</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
