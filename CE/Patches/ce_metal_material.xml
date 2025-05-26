@@ -5,6 +5,8 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestMetal" or
+            defName="TA_MailleVest" or
             defName="TA_MailleShirt"
 			]/stuffCategories</xpath>
 		<value>
@@ -13,16 +15,5 @@
             </stuffCategories>
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[
-            defName="TA_LamellarVestMetal"
-			]/stuffCategories</xpath>
-		<value>
-            <stuffCategories>
-                <li>Steeled</li>
-            </stuffCategories>
-		</value>
-	</Operation>
-
+	
 </Patch>

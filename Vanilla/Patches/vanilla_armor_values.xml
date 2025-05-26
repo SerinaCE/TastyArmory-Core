@@ -28,6 +28,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
+            defName="TA_MailleVest" or
             defName="TA_MailleShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
