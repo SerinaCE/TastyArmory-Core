@@ -3,7 +3,7 @@
 
 	<!--TA_Pike-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="TA_Pike"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
