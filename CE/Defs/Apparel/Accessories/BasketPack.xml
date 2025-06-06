@@ -4,41 +4,40 @@
 	<!-- ==================== Sack ==================== -->
 
 	<ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
-		<defName>TA_SnapSack</defName>
-		<label>snapsack</label>
+		<defName>TA_BasketPack</defName>
+		<label>woven backpack</label>
 		<description>.</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_Snapsack/TA_Snapsack_ico</texPath>
+			<texPath>Apparel/Accessories/TA_BasketPack/TA_BasketPack_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>0.8</Mass>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>2</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk MayRequire="CETeam.CombatExtended">30</CarryBulk>
+			<CarryBulk MayRequire="CETeam.CombatExtended">45</CarryBulk>
 		</equippedStatOffsets>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
-			<li>Fabric</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<recipeMaker>
 			<recipeUsers>
 				<li>CraftingSpot</li>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 				<defaultData>
 					<layer>28</layer>
 				</defaultData>
 			</drawData>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<careIfDamaged>false</careIfDamaged>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
@@ -54,7 +53,7 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Apparel/Accessories/TA_Snapsack/TA_Snapsack</wornGraphicPath>
+			<wornGraphicPath>Apparel/Accessories/TA_BasketPack/TA_BasketPack</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<east>

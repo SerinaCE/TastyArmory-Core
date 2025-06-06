@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--AmmoBase-->
+
+	<ThingCategoryDef>
+		<defName>MortarGrenade</defName>
+		<label>Mortar Grenade</label>
+		<parent>AmmoGrenades</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberGrenade</iconPath>
+	</ThingCategoryDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="HandMortarBombBase" ParentName="AmmoBase" Abstract="True">
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>MortarGrenade</li>
+		</thingCategories>
+		<stackLimit>50</stackLimit>
+		<cookOffFlashScale>20</cookOffFlashScale>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+<!--DAMAGE DEF-->
+
+  <DamageDef ParentName="Bullet">
+		<defName>TA_WreckingBall</defName>
+		<label>wreck</label>
+		<deathMessage>{0} has been wrecked to death.</deathMessage>
+		<buildingDamageFactor>1.25</buildingDamageFactor>
+		<plantDamageFactor>1.25</plantDamageFactor>
+  </DamageDef>
+	
+</Defs>

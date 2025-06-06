@@ -111,7 +111,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>95</speed>
-			<damageDef>Bullet</damageDef>
+			<damageDef>TA_WreckingBall</damageDef>
 			<damageAmountBase>164</damageAmountBase>
 			<armorPenetrationSharp>20</armorPenetrationSharp>
 			<armorPenetrationBlunt>3297</armorPenetrationBlunt>
