@@ -233,7 +233,7 @@
 					<li>
 						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
-						<emissionsPerTick>2</emissionsPerTick>
+						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>5</flecksPerEmission>
 						<cutoffTickRange>1~2</cutoffTickRange>
 					</li>
@@ -257,7 +257,7 @@
 					<li>
 						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
-						<emissionsPerTick>2</emissionsPerTick>
+						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
 						<cutoffTickRange>1~2</cutoffTickRange>
 					</li>
@@ -281,7 +281,7 @@
 					<li>
 						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
-						<emissionsPerTick>2</emissionsPerTick>
+						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
 						<cutoffTickRange>1~2</cutoffTickRange>
 					</li>
@@ -305,7 +305,7 @@
 					<li>
 						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
-						<emissionsPerTick>2</emissionsPerTick>
+						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
 						<cutoffTickRange>1~2</cutoffTickRange>
 					</li>
