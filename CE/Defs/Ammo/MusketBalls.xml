@@ -207,6 +207,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>5</flecksPerEmission>
@@ -230,6 +231,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>2</emissionsPerTick>
 						<flecksPerEmission>5</flecksPerEmission>
@@ -253,6 +255,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>2</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
@@ -276,6 +279,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>2</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
@@ -299,6 +303,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>0</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>2</emissionsPerTick>
 						<flecksPerEmission>3</flecksPerEmission>
@@ -324,6 +329,19 @@
 			<armorPenetrationBlunt>1.48</armorPenetrationBlunt>
 			<spreadMult>17.8</spreadMult>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<startDelayTick>0</startDelayTick>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>1</emissionsPerTick>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
 	</ThingDef>	
 
 	<!-- ==================== Recipes ========================== -->
