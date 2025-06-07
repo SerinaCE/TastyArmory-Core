@@ -30,8 +30,8 @@
 		<defName>TA_WreckingBall</defName>
 		<label>wreck</label>
 		<deathMessage>{0} has been wrecked to death.</deathMessage>
-		<buildingDamageFactor>1.25</buildingDamageFactor>
-		<plantDamageFactor>1.25</plantDamageFactor>
+		<buildingDamageFactor>2</buildingDamageFactor>
+		<plantDamageFactor>2</plantDamageFactor>
   </DamageDef>
 	
 </Defs>
