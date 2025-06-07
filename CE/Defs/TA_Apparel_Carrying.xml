@@ -36,6 +36,9 @@
     </recipeMaker>
     <apparel>
       <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<layers>
+				<li>Webbing</li>
+			</layers>
     </apparel>
     <thingCategories>
       <li>ApparelUtility</li>

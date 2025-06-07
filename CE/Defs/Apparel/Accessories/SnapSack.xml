@@ -37,6 +37,9 @@
 				<defaultData>
 					<layer>28</layer>
 				</defaultData>
+				<dataSouth>
+					<layer>0</layer>
+				</dataSouth>
 			</drawData>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<careIfDamaged>false</careIfDamaged>
@@ -44,7 +47,7 @@
 			<bodyPartGroups>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<layers>
+			<layers Inherit="False">
 				<li>Backpack</li>
 			</layers>
 			<tags>

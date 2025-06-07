@@ -24,7 +24,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ReloadSpeed MayRequire="CETeam.CombatExtended">0.15</ReloadSpeed>
+			<ReloadSpeed MayRequire="CETeam.CombatExtended">0.1</ReloadSpeed>
 			<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
 		</equippedStatOffsets>
 		<costStuffCount>35</costStuffCount>
@@ -47,9 +47,6 @@
 				<li>Torso</li>
 				<li>Waist</li>
 			</bodyPartGroups>
-			<layers>
-				<li>Webbing</li>
-			</layers>
 			<tags>
 				<li>Medieval</li>
 				<li>MedievalMilitary</li>

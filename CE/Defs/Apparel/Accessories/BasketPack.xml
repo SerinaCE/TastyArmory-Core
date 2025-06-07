@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
 		<defName>TA_BasketPack</defName>
-		<label>woven backpack</label>
+		<label>basket backpack</label>
 		<description>.</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
@@ -15,13 +15,14 @@
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>7500</WorkToMake>
-			<Mass>2</Mass>
+			<Mass>3</Mass><!-- x0.6 'cause wood -->
 			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk MayRequire="CETeam.CombatExtended">45</CarryBulk>
 		</equippedStatOffsets>
-		<costStuffCount>55</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -31,11 +32,13 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 				<defaultData>
 					<layer>28</layer>
 				</defaultData>
+				<dataSouth>
+					<layer>0</layer>
+				</dataSouth>
 			</drawData>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<careIfDamaged>false</careIfDamaged>
@@ -43,7 +46,7 @@
 			<bodyPartGroups>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<layers>
+			<layers Inherit="False">
 				<li>Backpack</li>
 			</layers>
 			<tags>

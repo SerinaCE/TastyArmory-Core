@@ -246,7 +246,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>110</speed>
 			<damageAmountBase>21</damageAmountBase>
-			<armorPenetrationSharp>5</armorPenetrationSharp>
+			<armorPenetrationSharp>4.75</armorPenetrationSharp>
 			<armorPenetrationBlunt>48</armorPenetrationBlunt>
 		</projectile>
 		<comps>
