@@ -22,13 +22,14 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>1</Mass>
+			<Mass>0.7</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">5</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
 			<EquipDelay>3.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk MayRequire="CETeam.CombatExtended">18</CarryBulk>
+			<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
+			<CarryingCapacity>15</CarryingCapacity>
 		</equippedStatOffsets>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>

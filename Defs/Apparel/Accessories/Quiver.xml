@@ -75,6 +75,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
+			<CarryingCapacity>15</CarryingCapacity>
 		</equippedStatOffsets>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>

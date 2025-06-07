@@ -12,7 +12,7 @@
 	</ThingStyleDef>
 
   <!--Scabbard-->
-  <ThingDef ParentName="ApparelCarryGearBase" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">
+  <ThingDef ParentName="TA_ApparelCarryGearBase" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">
     <defName>TA_SwordScabbard</defName>
     <label>sword scabbard</label>
     <description>Scabbard holding an arming sword, stylish and comfortable personal defense carry.</description>
@@ -48,6 +48,7 @@
     </statBases>
     <equippedStatOffsets>
       <CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
+			<CarryingCapacity>10</CarryingCapacity>
     </equippedStatOffsets>
     <costStuffCount>20</costStuffCount>
     <stuffCategories>

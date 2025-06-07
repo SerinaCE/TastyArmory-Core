@@ -19,13 +19,14 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>0.8</Mass>
+			<Mass>1.2</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<ReloadSpeed MayRequire="CETeam.CombatExtended">0.1</ReloadSpeed>
 			<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
+			<CarryingCapacity>15</CarryingCapacity>
 		</equippedStatOffsets>
 		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
