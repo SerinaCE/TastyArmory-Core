@@ -23,15 +23,5 @@
 		<cookOffFlashScale>20</cookOffFlashScale>
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
-
-<!--DAMAGE DEF-->
-
-  <DamageDef ParentName="Bullet">
-		<defName>TA_WreckingBall</defName>
-		<label>wreck</label>
-		<deathMessage>{0} has been wrecked to death.</deathMessage>
-		<buildingDamageFactor>2</buildingDamageFactor>
-		<plantDamageFactor>2</plantDamageFactor>
-  </DamageDef>
 	
 </Defs>
