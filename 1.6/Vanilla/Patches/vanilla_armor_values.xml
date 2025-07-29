@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--Clothes-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  @Name="TA_Tunic_base" or
+                  defName="TA_KidHood" or
+                  @Name="TA_Cloak_Base"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+
+    <!--TA_GambesonCoat-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_GambesonCoat"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ========== TA_MailleShirt ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_MailleVest" or
+            defName="TA_MailleShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ========== TA_LamellarVestMetal ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestMetal"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ========== TA_LamellarVestLeather ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_LamellarVestLeather"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+
+</Patch>

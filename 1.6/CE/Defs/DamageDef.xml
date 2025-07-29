@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <DamageDef ParentName="Bullet">
+		<defName>TA_WreckingBall</defName>
+		<label>wreck</label>
+		<deathMessage>{0} has been wrecked to death.</deathMessage>
+		<buildingDamageFactor>1.5</buildingDamageFactor>
+		<plantDamageFactor>1.5</plantDamageFactor>
+  </DamageDef>
+	
+</Defs>

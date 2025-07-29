@@ -5,6 +5,7 @@
 	<url>https://github.com/SerinaCE/TastyArmory-Core</url>
 	<supportedVersions>
 	  <li>1.5</li>
+	  <li>1.6</li>
 	</supportedVersions>
 		<packageId>al9000.tastycore</packageId>
 	<description>stuff</description>

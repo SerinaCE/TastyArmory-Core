@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingStyleDef MayRequire="al9000.highmedieval">
+		<defName>TA_MailleShirt_Bulky</defName>
+		<wornGraphicPath>Apparel/Armor/TA_CoatOfMaille/TA_CoatOfMaille</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_CoatOfMaille/TA_CoatOfMaille_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="ArmorSmithableBase" MayRequireAnyOf="al9000.tastysteppe,al9000.fireandsteel,al9000.highmedieval">
+		<defName>TA_MailleShirt</defName>
+		<label>maille shirt</label>
+		<description>long shirt of riveted maille, decent protection, very durable, lot of work to make.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_MailleShirt/TA_MailleShirt_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<randomStyleChance>0.4</randomStyleChance>
+		<randomStyle>
+			<li MayRequire="al9000.highmedieval">
+				<styleDef>TA_MailleShirt_Bulky</styleDef>
+			</li>
+		</randomStyle>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<equippedStatOffsets />
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToMake>27000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
+			<Mass>9</Mass>
+			<StuffEffectMultiplierArmor>1.65</StuffEffectMultiplierArmor>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_MailleShirt/TA_MailleShirt</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>TA_UnderArmor</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+						<parts>
+							<li>Torso</li>
+							<li>Shoulder</li>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>
