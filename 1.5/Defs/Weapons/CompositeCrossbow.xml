@@ -30,7 +30,7 @@
         <li>NeolithicRangedChief</li>
         <li>MedievalRangedDecent</li>
         <li>MedievalRangedAdvanced</li>
-			<li>CE_OneHandedWeapon</li>
+        <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-	<!--ThingDef Name="TA_Capelet_Base" ParentName="ApparelMakeableBase" Abstract="True">
+<!--
+	<ThingDef Name="TA_Capelet_Base" ParentName="ApparelMakeableBase" Abstract="True">
 		<label>capelet</label>
 		<description>.</description>
 		<recipeMaker>
@@ -27,6 +27,12 @@
 			<li>ApparelMisc</li>
 		</thingCategories>
 		<apparel>
+			<parentTagDef>ApparelBody</parentTagDef>
+			<drawData>
+				<defaultData>
+					<layer>68</layer>
+				</defaultData>
+			</drawData>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -60,12 +66,11 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletUp</wornGraphicPath>
 			<renderNodeProperties>
-				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
-					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
-					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
-					<backGraphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletUp</backGraphicPath>
+				<li Class="PawnRenderNodeProperties">
+					<nodeClass>PawnRenderNode_Apparel</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<graphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletUp</graphicPath>
 					<visibleFacing>
 						<li>South</li>
 						<li>North</li>
@@ -77,7 +82,7 @@
 			</renderNodeProperties>
 		</apparel>
 		<comps>
-			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<SwitchTo>TA_CapeletDown</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletDown_ico</graphicPath>
 				<Label>hood down</Label>
@@ -96,12 +101,11 @@
 			<renderSkipFlags Inherit="False">
 				<li>None</li>
 			</renderSkipFlags>
-			<wornGraphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletDown</wornGraphicPath>
 			<renderNodeProperties>
-				<li Class="CapeFramework.PawnRenderNodeProperties_DualTexture">
-					<nodeClass>CapeFramework.PawnRenderNode_Apparel_DualTexture</nodeClass>
-					<workerClass>CapeFramework.PawnRenderNodeWorker_Apparel_DualTexture</workerClass>
-					<backGraphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletDown</backGraphicPath>
+				<li Class="PawnRenderNodeProperties">
+					<nodeClass>PawnRenderNode_Apparel</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<graphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletDown</graphicPath>
 					<visibleFacing>
 						<li>South</li>
 						<li>North</li>
@@ -113,12 +117,12 @@
 			</renderNodeProperties>
 		</apparel>
 		<comps>
-			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<SwitchTo>TA_CapeletUp</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_Capelet/TA_CapeletUp_ico</graphicPath>
 				<Label>hood up</Label>
 			</li>
 		</comps>
-	</ThingDef-->
-
+	</ThingDef>
+-->
 </Defs>

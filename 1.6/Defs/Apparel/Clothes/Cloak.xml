@@ -29,6 +29,7 @@
 			<li>ApparelMisc</li>
 		</thingCategories>
 		<apparel>
+			<parentTagDef>ApparelBody</parentTagDef>
 			<drawData>
 				<defaultData>
 					<layer>25</layer>

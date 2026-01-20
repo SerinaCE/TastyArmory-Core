@@ -30,7 +30,7 @@
         <li>NeolithicRangedChief</li>
         <li>MedievalRangedDecent</li>
         <li>MedievalRangedAdvanced</li>
-			<li>CE_OneHandedWeapon</li>
+        <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
@@ -46,6 +46,11 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
