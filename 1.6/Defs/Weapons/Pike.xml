@@ -9,7 +9,7 @@
 			<texPath>Weapons/Melee/TA_Pike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>2</drawSize>
+			<drawSize>1.85</drawSize>
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
