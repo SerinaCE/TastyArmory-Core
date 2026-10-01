@@ -255,7 +255,7 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_4lbsCannonBall_Canister</defName>
-		<label>Make 4-poundercanister shot cannon shells x5</label>
+		<label>Make 4-pounder canister shot cannon shells x5</label>
 		<description>Craft 5 4-pounder canister shot cannon shells.</description>
 		<jobString>Making 4-pounder canister shot cannon shells.</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
